@@ -156,6 +156,7 @@ seqguard/
 | 2026-07-23 | Sequence preprocessing pipeline  |
 | 2026-07-24 | Self-supervised pretraining |
 | 2026-07-24 | Masked sequence dataset implemented and tested on real data |
+| 2026-07-24 | Transformer encoder + fusion classifier architecture implemented and shape-tested |
 | (in progress) | Fine-tuning + baseline ablation |
 | — | Real-time serving + monitoring |
 
