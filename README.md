@@ -155,7 +155,8 @@ seqguard/
 | 2026-07-23 | Repo structure created, dataset downloaded |
 | 2026-07-23 | Sequence preprocessing pipeline  |
 | 2026-07-24 | Self-supervised pretraining |
-| — | Fine-tuning + baseline ablation (in progress) |
+| 2026-07-24 | Masked sequence dataset implemented and tested on real data |
+| (in progress) | Fine-tuning + baseline ablation |
 | — | Real-time serving + monitoring |
 
 > This table is updated as each stage is completed.
