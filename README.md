@@ -23,9 +23,11 @@ then fine-tuned for classification, and served as a real-time scoring pipeline.
   - [Results](#results)
   - [Repository Structure](#repository-structure)
   - [Getting Started](#getting-started)
+  - [Project Status](#project-status)
   - [System Design Notes](#system-design-notes)
   - [Limitations \& Future Work](#limitations--future-work)
   - [References](#references)
+  - [Author](#author)
 
 ---
 
@@ -80,6 +82,13 @@ not just offline notebook metrics.
 
 ## Architecture
 
+**Status: Design finalized, implementation in progress**
+
+> The high-level design (Transformer encoder → masked-event pretraining →
+> fusion classifier → real-time serving) is fixed. Detailed architecture diagrams
+> and component descriptions will be added here as each module is implemented
+> and tested.
+
 **Model components:**
 
 | Component | Description |
@@ -92,9 +101,25 @@ not just offline notebook metrics.
 
 ## Dataset & Preprocessing
 
+**Status: In Progress**
+
+- [x] Dataset identified and downloaded (Avazu CTR Prediction, Kaggle)
+- [x] Sequence construction pipeline (`prepare_data.py`) — in development
+- [ ] Tokenization and vocabulary building
+- [ ] Sequence padding/truncation strategy
+
+> Full preprocessing methodology will be documented here once the pipeline is
+> validated end-to-end.
+
 ---
 
 ## Results
+
+**Status: Pending**
+
+> Results will be published here once training and evaluation are complete,
+> including a baseline comparison (pretrained vs. supervised-only) to isolate
+> the impact of self-supervised pretraining.
 
 ---
 
@@ -116,6 +141,24 @@ seqguard/
 ---
 
 ## Getting Started
+
+> Setup instructions will be finalized once the preprocessing and training
+> pipeline are complete. Currently in progress — see [Timeline](#project-status)
+> below for what's done so far.
+
+---
+
+## Project Status
+
+| Date | Milestone |
+|---|---|
+| 2026-07-23 | Repo structure created, dataset downloaded |
+| 2026-07-23 | Sequence preprocessing pipeline  |
+| — | Self-supervised pretraining (in progress) |
+| — | Fine-tuning + baseline ablation |
+| — | Real-time serving + monitoring |
+
+> This table is updated as each stage is completed.
 
 ---
 
@@ -148,3 +191,7 @@ seqguard/
 ---
 
 ## References
+
+## Author
+
+**[Meenakshi Sundaram N]**
